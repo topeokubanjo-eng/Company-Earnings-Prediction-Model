@@ -68,7 +68,7 @@ yfinance API → Data Cleaning → Feature Engineering → ML Pipeline → Evalu
 
 ## Exploratory Data Analysis
 
-![EDA Overview](images/01_eda_overview.png)
+![EDA Overview](01_eda_overview.png)
 
 **Key findings from EDA:**
 
