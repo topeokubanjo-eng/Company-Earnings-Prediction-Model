@@ -81,7 +81,7 @@ yfinance API → Data Cleaning → Feature Engineering → ML Pipeline → Evalu
 
 ## Feature Engineering
 
-![Feature Engineering](images/02_feature_engineering.png)
+![Feature Engineering](02_feature_engineering.png)
 
 **27 features across 5 categories:**
 
@@ -103,7 +103,7 @@ yfinance API → Data Cleaning → Feature Engineering → ML Pipeline → Evalu
 
 ## Model Performance
 
-![Model Performance](images/03_model_performance.png)
+![Model Performance](03_model_performance.png)
 
 Four classifiers benchmarked using **time-series cross-validation** (no look-ahead bias):
 
@@ -129,7 +129,7 @@ Four classifiers benchmarked using **time-series cross-validation** (no look-ahe
 
 ## Alpha Signal Backtest
 
-![Alpha Backtest](images/04_backtest.png)
+![Alpha Backtest](04_backtest.png)
 
 The model's output isn't just a classifier — it's a **rank signal**. At each quarter in the test period, we rank all 50 stocks by predicted beat probability and split into quintiles.
 
@@ -147,7 +147,7 @@ The model's output isn't just a classifier — it's a **rank signal**. At each q
 
 ## Sector Analysis
 
-![Sector Analysis](images/05_sector_analysis.png)
+![Sector Analysis](05_sector_analysis.png)
 
 **Model AUC varies significantly by sector** — and this is meaningful, not a flaw:
 
