@@ -149,11 +149,19 @@ The model's output isn't just a classifier — it's a **rank signal**. At each q
 
 ![Sector Analysis](05_sector_analysis.png)
 
-**Model AUC varies significantly by sector** — and this is meaningful, not a flaw:
+**Model performance varies meaningfully by sector, which suggests the signal is stronger in some industries than others rather than being uniformly reliable across the market.**
 
-- **Technology** is the most predictable sector (highest AUC) — structured analyst coverage, forward guidance culture, and operating leverage make fundamentals more informative
-- **Energy** is the least predictable — commodity prices and geopolitical factors dominate earnings, but don't show up in the fundamental feature set
-- **Analyst revision heatmap:** Strong monotonic relationship in every sector — stocks with +2 upward revisions beat at dramatically higher rates than stocks with -2 downward revisions, confirming analyst revisions as a robust cross-sector signal
+- **Technology** is the most predictable sector in this sample, with the highest ROC-AUC. This suggests that analyst revisions, valuation context, and momentum features are more informative for earnings prediction in Tech.
+- **Healthcare** also shows relatively strong predictability, indicating that the model captures useful pre-earnings signals in sectors where company fundamentals and analyst coverage may be more structured.
+- **Financials** and **Consumer Discretionary** are weaker in this sample, with performance closer to a random baseline. That suggests the current feature set may not fully capture the drivers of earnings outcomes in those sectors.
+- Although **Energy** shows a strong sector AUC in this chart, results in that sector should still be interpreted carefully because earnings can be heavily influenced by external commodity and macro shocks that are not fully represented in the feature set.
+
+**Analyst revision heatmap insight:**
+- Across most sectors, higher analyst revision levels are generally associated with higher beat rates.
+- This supports the idea that **analyst revisions are one of the most informative cross-sector signals** in the project.
+- The relationship is not perfectly uniform in every cell, but the overall pattern suggests that upward revisions contain useful predictive information ahead of earnings announcements.
+
+> **Takeaway:** The model is not equally effective in every sector, but it shows the strongest practical signal in Technology and Healthcare, while analyst revisions appear to be one of the most transferable predictive features across sectors.
 
 ---
 
