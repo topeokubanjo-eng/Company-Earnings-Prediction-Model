@@ -218,10 +218,3 @@ The notebook runs end-to-end with no API keys required. If `yfinance` is availab
 - [House Price Prediction (ML)](https://github.com/topeokubanjo-eng/house-price-ml) — R² 0.905, XGBoost vs Ridge benchmarking
 - [Big Tech Portfolio Optimization](https://github.com/topeokubanjo-eng/portfolio-optimization) — Efficient frontier, Sharpe ~2.5
 
----
-
-<div align="center">
-
-**[Portfolio](https://topeokubanjo-eng.github.io)** · **[LinkedIn](https://linkedin.com/in/topeokubanjo)** · **[GitHub](https://github.com/topeokubanjo-eng)**
-
-</div>
